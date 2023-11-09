@@ -27,7 +27,7 @@
 
       {
           print ("Ingrese el elemento %d %d", I+1, J+1);
-          scanf ("%d", &A[I][J]);
+        scanf ("%d", &A[I][J]);
       }
       }
       void imrpime  (int A[] [TAM], int F )

@@ -1,5 +1,5 @@
 
-  clude <stdio.h>
+# include <stdio.h>
 
  /* Suma matrices.
  El programa, al recibir como datos dos arreglos bidimensionales del mismo
@@ -7,12 +7,13 @@
  bidimensional. */
 
  const intMAX = 50;
+
  /* Prototipo de funciones. */
 
- voidLectura(int [][MAX], int, int);
- voidSuma(int[][MAX], int[][MAX], int[][MAX], int, int);
+ void Lectura(int [][MAX], int, int);
+ void Suma(int[][MAX], int[][MAX], int[][MAX], int, int);
  void Imprime(int [][MAX], int, int);
- voidmain(void)
+ void main(void)
  {
  intMA[MAX][MAX], MB[MAX][MAX], MC[MAX][MAX];
 
@@ -38,16 +39,17 @@
  printf(”\nLectura del Arreglo MA\n”);
  Lectura(MA, FIL, COL);
 
-  printf(”\nLectura del Arreglo MB\n”);
- Lectura(MB, FIL, COL);
+  printf (”\nLectura del Arreglo MB\n”);
+ Lectura (MB, FIL, COL);
  Suma (MA, MB, MC, FIL, COL);
- printf(”\nImpresión del Arreglo MC\n”);
+ printf (”\nImpresión del Arreglo MC\n”);
  Imprime (MC, FIL, COL);
  }
  voidLectura(int A[][MAX], intF, int C)
 
  /* La función Lecturase utiliza para leer un arreglo bidimensional entero de F
  filas y Ccolumnas. */
+
  {
  intI, J;
  for (I=0; I<F; I++)
